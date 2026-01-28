@@ -5,35 +5,104 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>LitheVision</title>
   <link rel="icon" type="image/png" href="favicon.png" sizes="32x32" />
-  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 
-<!-- Top Nav  -->
 <body>
-    <header class="top-nav">
+  <!-- Top Nav -->
+  <header class="top-nav">
     <div class="nav-inner">
+      <div class="nav-brand">
         <img src="favicon.png" alt="Logo" class="nav-logo">
-        <div class="nav-title"><class="brand">Lithe<span class="highlight">Vision</span></div>
-        <nav>
+        <span class="nav-title">Lithe<span class="highlight">Vision</span></span>
+      </div>
+      <nav>
         <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#contact">Contact</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#platform">Platform</a></li>
+          <li><a href="#why-lithevision">Why LitheVision</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
-        </nav>
+      </nav>
     </div>
-    </header>
+  </header>
 
-<section id="home" class="container">
-  <img src="favicon.png" alt="LitheVision logo" class="logo" />
-  <h1 class="brand">Lithe<span class="highlight">Vision</span></h1>
-  <p>We are an early-stage venture enabling real-world deployment of data-efficient computer vision.</p>
-  <p>Contact us at <a href="mailto:contact@lithevision.com">contact@lithevision.com</a></p>
-</section>
+  <!-- Home Section -->
+  <section id="home" class="section hero-section">
+    <div class="section-content">
+      <img src="favicon.png" alt="LitheVision logo" class="logo" />
+      <h1 class="brand">Lithe<span class="highlight">Vision</span></h1>
+      <p class="tagline">We are an early-stage venture enabling real-world deployment of data-efficient computer vision.</p>
+    </div>
+  </section>
 
+  <!-- Platform Section -->
+  <section id="platform" class="section platform-section">
+    <div class="section-content">
+      <h2>Our Platform</h2>
+      <p>LitheVision delivers cutting-edge computer vision solutions that require significantly less training data than traditional approaches. Our platform enables rapid deployment of vision AI in resource-constrained environments.</p>
+      <div class="features">
+        <div class="feature">
+          <h3>Data Efficient</h3>
+          <p>Train accurate models with a fraction of the data typically required.</p>
+        </div>
+        <div class="feature">
+          <h3>Edge Ready</h3>
+          <p>Optimized for deployment on edge devices with limited compute resources.</p>
+        </div>
+        <div class="feature">
+          <h3>Rapid Integration</h3>
+          <p>Simple APIs and SDKs for seamless integration into your existing workflows.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<footer>
-    <p>© 2025 LitheVision | <a href=# >GitHub</a></p>
-</footer>
+  <!-- Why LitheVision Section -->
+  <section id="why-lithevision" class="section why-section">
+    <div class="section-content">
+      <h2>Why LitheVision</h2>
+      <p>Traditional computer vision requires massive datasets and extensive computational resources. LitheVision changes the game.</p>
+      <div class="benefits">
+        <div class="benefit">
+          <h3>Reduce Data Collection Costs</h3>
+          <p>Spend less time and money gathering and labeling training data.</p>
+        </div>
+        <div class="benefit">
+          <h3>Faster Time to Market</h3>
+          <p>Deploy production-ready models in weeks, not months.</p>
+        </div>
+        <div class="benefit">
+          <h3>Real-World Performance</h3>
+          <p>Models that work reliably in challenging, real-world conditions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- Contact Section -->
+  <section id="contact" class="section contact-section">
+    <div class="section-content">
+      <h2>Contact Us</h2>
+      <p>Email: <a href="mailto:contact@lithevision.org">contact@lithevision.org</a></p>
+      <p>Phone: (475) 224-7376</p>
+      <p>Or use the form below:</p>
+
+      <form class="contact-form" action="https://formspree.io/f/movenlbq" method="POST">
+        <input type="text" name="name" placeholder="Your Name *" required>
+        <input type="email" name="email" placeholder="Your Email *" required>
+        <input type="text" name="phone" placeholder="Your Phone">
+        <textarea name="message" placeholder="Your Message *" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>LitheVision | <a href="https://www.linkedin.com/company/lithevision">LinkedIn</a></p>
+  </footer>
+
+</body>
 </html>
